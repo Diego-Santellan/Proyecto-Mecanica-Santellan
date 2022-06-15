@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body#intro{
+    background-image: url(../image/Mecanica-Automotriz.webp);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    & header{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        & img{
+            margin-top: 40px;
+            width: 12%;
+            height: fit-content;
+        }
+    }
+    & nav{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        & ul{
+            width: 60%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            & li{
+                width: 100%;
+                padding: 1.5%;
+                text-align: center;
+                background-color: orange;
+                margin: 2%;
+                list-style: none;
+                /*le agregamos trasparencia al color*/
+                filter:alpha(opacity=90);
+                -moz-opacity:.90;opacity:.90;
+                /*bordes redondeados*/
+                -webkit-border-radius: 10px;
+                border-radius: 10px;
+                & a{
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+                    color: white;
+                    text-decoration: none;
+                    font-size: 20px;
+                }
+                & a:hover{
+                    color: orange;
+                }
+            }
+            & li:hover{
+                background-color: black;
+                filter:alpha(opacity=70);
+                -moz-opacity:.70;opacity:.70;
+            }
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    height: 12vh;
+    background: linear-gradient(60deg, orange, black);
+    & p{
+        text-align: center;
+        padding-top: 6vh;
+        color:antiquewhite;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    body#intro{
+        width: 100%;
+        height: 100vh;
+        & header{
+            padding: 0;
+            margin: 0;
+            height: 170px;
+            align-items: center;
+            img{
+                width: 20%;
+            }
+        }
+        & nav{
+            & ul{
+                display: flex;
+                flex-direction: column;
+                & li{
+                    -webkit-border-radius: 10px;
+                    border-radius: 10px;  
+                }
+            }
+        }
+    }
+    
+}

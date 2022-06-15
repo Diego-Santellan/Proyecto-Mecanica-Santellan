@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas</title>
+    <link rel="stylesheet" href="../Style/Style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./recomendaciones.html">Recomendaciones</a></li>
+                <li><a href="#">Consultas</a></li>
+                <li><a href="./contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Espacio de consultas</h1>
+        <div class="consultas">
+
+            <h2>Consultas frecuentes</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, obcaecati explicabo dolor natus odit dolores nihil fuga? Assumenda eius magnam ducimus dolorem nisi necessitatibus, quasi beatae, debitis velit recusandae excepturi.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit maxime officia dolor a dolores ipsum alias quos laudantium quasi culpa totam blanditiis iusto, deleniti fuga! In nisi ut minus recusandae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis inventore magnam totam, dolor, laudantium at laboriosam, ex dolorem iusto nesciunt qui architecto! Quam voluptate ab obcaecati odit vitae velit iusto!</p>
+        </div>
+        
+        <section id="consultas">
+            <h2>Dejanos tu consuta</h2>
+            <form action="enviar.php" method="get" enctype="text/plain">
+                <div>
+                    <label for="nombre">Nobre</label>
+                    <input type="text" id="nombre" placeholder="Ingrese su nombre">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div>
+                    <label for="">Que clase de auto tienes??</label>
+                    <input type="radio" name="auto" value="1">Combustion
+                    <input type="radio" name="auto" value="2">Hibrido
+                    <input type="radio" name="auto" value="3">Electrico
+                </div>
+                <div>
+                    <textarea name="consultas" id="consultas" cols="50" rows="10" placeholder="dejanos tu consulta"></textarea>
+                </div>
+                <input type="submit" value="Enviar">
+            </form>
+
+
+        </section>
+    </main>
+
+
+    <footer>
+        <p>Derechos Reservados Mecanica Santellán</p>    
+    </footer>
+</body>
+</html>

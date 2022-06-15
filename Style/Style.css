@@ -1,0 +1,373 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+
+/* PAGINA INTRO*/
+body#intro{
+    background-image: url(../image/Mecanica-Automotriz.webp);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+body#intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+body#intro header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+body#intro header img{
+    margin-top: 40px;
+    width: 12%;
+    height:fit-content;
+}
+/* nav intro*/
+body#intro nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+body#intro nav ul{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+body#intro nav ul li{
+    width: 100%;
+    padding: 1.5%;
+    text-align: center;
+    background-color: orange;
+    margin: 2%;
+    list-style: none;
+    /*le agregamos transparencia al color*/
+    filter:alpha(opacity=90);
+    -moz-opacity:.90;opacity:.90;
+    /*bordes redondeados*/
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+}
+
+body#intro nav ul li:hover{
+    background-color: black;
+    filter:alpha(opacity=70);
+    -moz-opacity:.70;opacity:.70;
+
+}
+
+body#intro nav ul li a{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+body#intro nav ul li:hover a{
+    color: orange;
+
+}
+
+
+/* RESTOS DE LAS PAGINAS*/
+
+
+/** Header **/
+body header{
+    background-image: url(../image/Mecanica-Automotriz.webp);
+    height: 250px;
+
+}
+body header nav{
+    position:fixed;
+    width: 100%;
+}
+body header nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    background: linear-gradient(60deg, orange ,black);
+
+}
+body header nav ul li{
+    height: 40px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body header nav ul li:hover a{ 
+    background: black;
+    filter:alpha(opacity=70);
+    -moz-opacity:.70;opacity:.70;
+    border-radius: 10px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body header nav ul li a{
+    text-decoration: none;
+    font-size: large;
+    color: white;
+    min-width: 150px;
+}
+
+
+/** cuerpo de pagina **/
+
+/*nosotros pag  */
+main{
+    width: 100%;
+    min-height: 500px;
+    background-color:black;
+    color: white;
+    font-size: large;
+    padding: 10%;
+}
+
+main h1{
+    color: orange;
+
+}
+main p{
+    padding: 15px;
+    
+}
+
+main div.nosotros1{
+    width: 100%;
+    padding-top: 3vh;
+    display: grid;
+    grid-template-columns: 30%;
+    grid-template-areas: 
+    "h2 h2 h2"
+    "p p img"
+    ;
+
+}
+main div.nosotros2{
+    width: 100%;
+    padding-top: 3vh;
+    display: grid;
+    grid-template-columns: 30%;
+    grid-template-areas: 
+    "h2 h2 h2"
+    "img p p"
+    ;
+
+}
+
+h2{
+    color: orange;
+    padding-bottom: 1vh;
+
+}
+main div p{
+    grid-area: p;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+
+}
+main div img{
+    width: 100%;
+    height: auto;
+    grid-area: img;
+
+}
+
+p.end{
+    padding-top: 100px;
+
+}
+
+p.end a{
+    text-decoration: none;
+}
+
+/*Recomendaciones pag y consultas pag*/
+div.recomendaciones, div.consultas {
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div.recomendaciones p, div.consultas p{
+    margin: 5px;
+    width: 80%;
+    background-color: darkgoldenrod;    
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+
+}
+
+
+/*consultas pag*/
+
+section#consultas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh;
+    margin-top: 5vh;
+    
+}
+
+section#consultas form{
+    background-color: orange;
+    padding: 2%;
+    width:70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+section#consultas form div{
+    padding: 1%;
+    color: black;
+}
+
+section#consultas form > input{
+    width: 20%;
+    height: 5vh;
+    background: linear-gradient(black 50%, grey);
+    color: darkgoldenrod;
+}
+
+/*contactos*/
+section#contactos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+section#contactos form{
+    width:50%;
+    padding: 3%;
+    background-color: orange;
+    color: black;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+section#contactos form div div input{
+    height: 5vh;
+    width: 100%;
+}
+
+section#contactos form div input.button{
+    width: 40%;
+    height: 5vh;
+    margin: 1%;
+    background: linear-gradient(black 50%, grey);
+    color: darkgoldenrod;
+}
+
+
+
+
+
+
+
+
+/*---------------   FOOTER    -------------------*/
+footer{
+    width: 100%;
+    height: 80px;    
+    background: linear-gradient(60deg, orange ,black);
+
+}
+
+footer p{
+    text-align: center;
+    padding-top: 40px;
+    color: antiquewhite;
+}
+
+
+
+
+
+
+
+
+/* -----DISEÑO RESPONSIVE----- */
+@media screen and (max-width: 500px){ 
+    
+    body#intro{
+        width: 100%;
+
+    }
+
+    body#intro header{
+        padding: 0;
+        margin: 0;
+        height: 170px;
+        align-items: center;
+    
+    }
+
+    body#intro header img{
+        width: 20%;
+
+    }
+
+    body#intro nav ul{
+        display: flex;
+        flex-direction: column;    
+    
+    }
+
+    body#intro nav ul li{
+
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+    }
+
+    body header{
+        height: 20vh;
+    }
+    
+    main.contactos{
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 500px;
+    }
+    footer{
+        background: linear-gradient(orange, black);
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+    }
+} 
