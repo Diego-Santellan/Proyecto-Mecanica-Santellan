@@ -1,0 +1,24 @@
+/* BUCLES */
+
+@for $i from 1 through 3{
+	h#{$i}{
+        font-size: 60px / $i;
+	}
+}
+
+
+/* EACH */
+
+@each $backgroud in blue, yellow, black {
+	.bg-#{$backgroud}{
+	background-color:#{$backgroud};
+	}
+}
+
+@each $color in red, white, wheat {
+	.cl-#{$color}{
+	color:#{$color};
+	}
+}
+
+

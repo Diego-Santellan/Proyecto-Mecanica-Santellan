@@ -1,0 +1,38 @@
+/* BUCLES */
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+/* EACH */
+.bg-blue {
+  background-color: blue;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.cl-red {
+  color: red;
+}
+
+.cl-white {
+  color: white;
+}
+
+.cl-wheat {
+  color: wheat;
+}
+/*# sourceMappingURL=page.css.map */
