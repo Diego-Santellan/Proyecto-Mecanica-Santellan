@@ -69,10 +69,11 @@ footer{
     width: 100%;
     height: 12vh;
     background: linear-gradient(60deg, orange, black);
-    & p{
-        text-align: center;
-        padding-top: 6vh;
-        color:antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & small{
+        color:white;
     }
 }
 

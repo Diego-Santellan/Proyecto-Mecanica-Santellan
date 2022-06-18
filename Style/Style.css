@@ -215,23 +215,68 @@ section#contactos form div input.button{
 
 
 /*---------------   FOOTER    -------------------*/
+
 footer{
     width: 100%;
-    height: 80px;    
     background: linear-gradient(60deg, orange ,black);
+}
+footer .grupo1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+footer .grupo1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .grupo1 .box figure img{
+    width: 250px;
 
 }
 
-footer p{
-    text-align: center;
-    padding-top: 40px;
+footer .grupo1 .box h2{
     color: antiquewhite;
+    margin-bottom: 25px;
+    font-size: 20px;
 }
 
+footer .grupo1 .box p{
+    color: aliceblue;
+    margin-bottom: 10px;
+}
 
+footer .grupo1 .red-social a{
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+}
+footer .grupo1 .red-social img{
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+}
 
+footer .grupo2{
+    background-color: black;
+    padding: 15px 10px;
+    text-align: center;
+    color: azure;
 
+}
 
+footer .grupo2 small{
+    font-size: 15px;
+}
 
 
 
