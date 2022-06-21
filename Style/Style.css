@@ -56,7 +56,7 @@ body header nav ul li a{
 main{
     width: 100%;
     min-height: 500px;
-    background-color:black;
+    background:linear-gradient( black 15vh, grey);
     color: white;
     font-size: large;
 }
@@ -72,8 +72,9 @@ main p{
 }
 
 main div.nosotros1{
-    width: 100%;
+    width: 90%;
     padding-top: 3vh;
+    padding-left: 15vh;
     display: grid;
     grid-template-columns: 30%;
     grid-template-areas: 
@@ -83,8 +84,9 @@ main div.nosotros1{
 
 }
 main div.nosotros2{
-    width: 100%;
+    width: 90%;
     padding-top: 3vh;
+    padding-left: 15vh;
     display: grid;
     grid-template-columns: 30%;
     grid-template-areas: 
@@ -155,7 +157,7 @@ section#consultas{
 section#consultas form{
     background-color: orange;
     padding: 2%;
-    width:70%;
+    width:50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -177,9 +179,8 @@ section#consultas form > input{
 }
 
 /*contactos*/
-section#contactos{
-    background-color: black;
-    color: antiquewhite;
+    section#contactos{
+        color: antiquewhite;
     width: 100%;
 
 }
@@ -223,8 +224,22 @@ section#contactos iframe{
     width: 100vw;
 }
 
+
+section.galeria{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section.galeria div{
+    width: 40%;
+    margin: 3vh;
+    display: inline-flex;
+}
+
+
 /* -----DISEÑO RESPONSIVE----- */
-@media screen and (max-width: 500px){ 
+@media screen and (max-width: 768 ){ 
     
     body#intro{
         width: 100%;
@@ -260,6 +275,9 @@ section#contactos iframe{
         height: 20vh;
     }
     
+
+
+
     main.contactos{
         display: inline-flex;
         flex-direction: column;
