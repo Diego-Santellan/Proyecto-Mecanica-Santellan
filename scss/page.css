@@ -5,7 +5,10 @@
 
 footer {
   width: 100%;
-  background: linear-gradient(60deg, orange, black);
+  background-image: url(../image/footer.webp);
+  filter: alpha(opacity=85);
+  -moz-opacity: .85;
+  opacity: .85;
 }
 
 footer .info {
@@ -39,13 +42,13 @@ footer .info .box figure img {
 }
 
 footer .info .box h2 {
-  color: antiquewhite;
+  color: darkorange;
   margin-bottom: 25px;
   font-size: 20px;
 }
 
 footer .info .box p {
-  color: antiquewhite;
+  color: orange;
   margin-bottom: 10px;
 }
 

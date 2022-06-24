@@ -6,12 +6,11 @@
 }
 /* RESTOS DE LAS PAGINAS*/
 
-/** Header **/
 body header{
     background-image: url(../image/Mecanica-Automotriz.webp);
-    height: 250px;
-
+    height: 50vh;
 }
+/** Header
 body header nav{
     position:absolute;
     width: 100%;
@@ -48,7 +47,7 @@ body header nav ul li a{
     color: white;
     min-width: 150px;
 }
-
+ **/
 
 /** cuerpo de pagina **/
 
@@ -73,24 +72,24 @@ main p{
 
 main div.nosotros1{
     width: 90%;
-    padding-top: 3vh;
+    padding-top: 10vh;
     padding-left: 15vh;
     display: grid;
     grid-template-columns: 30%;
     grid-template-areas: 
-    "h2 h2 h2"
+    "h2 h2 img"
     "p p img"
     ;
 
 }
 main div.nosotros2{
     width: 90%;
-    padding-top: 3vh;
+    padding-top: 10vh;
     padding-left: 15vh;
     display: grid;
     grid-template-columns: 30%;
     grid-template-areas: 
-    "h2 h2 h2"
+    "img  h2 h2"
     "img p p"
     ;
 
@@ -99,8 +98,14 @@ main div.nosotros2{
 h2{
     color: orange;
     padding-bottom: 1vh;
+    padding-left: 7vh;
 
 }
+
+main div h2{
+    grid-area: h2;
+}
+
 main div p{
     grid-area: p;
     width: auto;
@@ -293,3 +298,97 @@ section.galeria div{
 
     }
 } 
+
+
+body header .logo{
+    height: 8vh;
+    margin: 0 5vw;
+}
+
+body header nav {
+    background:linear-gradient(90deg, orange, black 70% );
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+body header nav ul{
+    display: flex;
+    justify-content: center;
+}
+body header nav ul li {
+    height: 40px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0 2vh;
+}
+
+body header nav ul li a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 3px;
+}
+
+body header nav ul li:hover a{ 
+    background-color: #48484d;
+    color: orange;
+    filter:alpha(opacity=90);
+    -moz-opacity:.90;opacity:.90;
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body header nav .checkbtn{
+    font-size: 30px;
+    color: white;
+    cursor:pointer;
+    display: none;
+}
+body header nav #check{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    body header nav ul li a{
+        font-size: auto;
+    }
+    body header nav .checkbtn{
+        display: flex;
+    }
+    body header nav{
+        padding: 0 30px;
+    }
+    body header nav ul{
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        flex-direction: column;
+        z-index: 10;
+    }
+    nav ul li{
+        margin: 20px 0;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        //background: #000090;
+        //color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
