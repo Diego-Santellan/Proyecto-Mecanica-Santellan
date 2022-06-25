@@ -6,17 +6,16 @@
 footer{
     width: 100%;
 	background-image: url(../image/footer.webp);
-    filter:alpha(opacity= 85);
-    -moz-opacity:.85;opacity:.85;
-
 	& .info{
 		width: 100%;
-		max-width: 1200px;
 		margin: auto;
 		display: grid;
 		grid-template-columns: repeat(3, 27%);
 		grid-gap: 50px;
 		padding: 45px 0px;
+		background-color: #545151;
+		filter:alpha(opacity= 90);
+		-moz-opacity:.90;opacity:.90;
 		& .box {
 			& figure{
 			width: 100%;
@@ -34,11 +33,14 @@ footer{
 				font-size: 20px;
 			}
 			& p{
-				color: orange;
+				color:orange;
 				margin-bottom: 10px;
 			}
 		}
 		& .red-social {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
 			& a{
 				display: inline-block;
 				width: 45px;

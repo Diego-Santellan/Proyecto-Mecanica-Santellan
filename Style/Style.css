@@ -10,44 +10,7 @@ body header{
     background-image: url(../image/Mecanica-Automotriz.webp);
     height: 50vh;
 }
-/** Header
-body header nav{
-    position:absolute;
-    width: 100%;
-}
-body header nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    background: linear-gradient(60deg, orange ,black);
 
-}
-body header nav ul li{
-    height: 40px;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-body header nav ul li:hover a{ 
-    background: black;
-    filter:alpha(opacity=70);
-    -moz-opacity:.70;opacity:.70;
-    border-radius: 10px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-body header nav ul li a{
-    text-decoration: none;
-    font-size: large;
-    color: white;
-    min-width: 150px;
-}
- **/
 
 /** cuerpo de pagina **/
 
@@ -328,7 +291,7 @@ body header nav ul li {
 }
 
 body header nav ul li a{
-    color: white;
+    color: wheat;
     font-size: 18px;
     text-decoration: none;
     padding: 3px;
@@ -370,10 +333,11 @@ body header nav #check{
         position: absolute;
         width: 100%;
         height: calc(100vh - 80px);
-        background: #2c3e50;
+        background:linear-gradient(orange, black);
         top: 80px;
         left: -100%;
         text-align: center;
+        justify-content: space-around;
         transition: all .5s;
         flex-direction: column;
         z-index: 10;

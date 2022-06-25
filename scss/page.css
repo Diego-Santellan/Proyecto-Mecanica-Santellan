@@ -6,14 +6,10 @@
 footer {
   width: 100%;
   background-image: url(../image/footer.webp);
-  filter: alpha(opacity=85);
-  -moz-opacity: .85;
-  opacity: .85;
 }
 
 footer .info {
   width: 100%;
-  max-width: 1200px;
   margin: auto;
   display: -ms-grid;
   display: grid;
@@ -21,6 +17,10 @@ footer .info {
       grid-template-columns: repeat(3, 27%);
   grid-gap: 50px;
   padding: 45px 0px;
+  background-color: #545151;
+  filter: alpha(opacity=90);
+  -moz-opacity: .90;
+  opacity: .90;
 }
 
 footer .info .box figure {
@@ -50,6 +50,17 @@ footer .info .box h2 {
 footer .info .box p {
   color: orange;
   margin-bottom: 10px;
+}
+
+footer .info .red-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer .info .red-social a {
