@@ -4,17 +4,75 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-/* RESTOS DE LAS PAGINAS*/
+/** MENU **/
 
 body header{
     background-image: url(../image/Mecanica-Automotriz.webp);
     height: 50vh;
 }
 
+body header .logo{
+    height: 8vh;
+    margin: 0 5vw;
+}
 
-/** cuerpo de pagina **/
+body header nav {
+    background:linear-gradient(90deg, orange, black 70% );
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+}
 
-/*nosotros pag  */
+body header nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+body header nav ul li {
+    height: 40px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0 2vh;
+}
+
+body header nav ul li a{
+    color: wheat;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 3px;
+}
+
+body header nav ul li:hover a{ 
+    background-color: #48484d;
+    color: orange;
+    filter:alpha(opacity=90);
+    -moz-opacity:.90;opacity:.90;
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body header nav .checkbtn{
+    font-size: 30px;
+    color: white;
+    cursor:pointer;
+    display: none;
+}
+
+body header nav #check{
+    display: none;
+}
+
+
+
+/** CUERPO DE PAGINAS **/
+
+
 main{
     width: 100%;
     min-height: 500px;
@@ -23,17 +81,40 @@ main{
     font-size: large;
 }
 
-main h1{
+h1{
     color: orange;
     padding: 2vw;
-
 }
-main p{
+
+h2{
+    color: darkorange;
+    padding-bottom: 1vh;
+    padding-left: 7vh;
+}
+
+p{
     padding: 15px;
-    
+}
+/** pag. nosotros **/
+main div h2{
+    grid-area: h2;
 }
 
-main div.nosotros1{
+main div p{
+    grid-area: p;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+main div img{
+    width: 100%;
+    height: auto;
+    grid-area: img;
+}
+
+div.nosotros1{
     width: 90%;
     padding-top: 10vh;
     padding-left: 15vh;
@@ -45,7 +126,8 @@ main div.nosotros1{
     ;
 
 }
-main div.nosotros2{
+
+div.nosotros2{
     width: 90%;
     padding-top: 10vh;
     padding-left: 15vh;
@@ -55,42 +137,14 @@ main div.nosotros2{
     "img  h2 h2"
     "img p p"
     ;
-
-}
-
-h2{
-    color: orange;
-    padding-bottom: 1vh;
-    padding-left: 7vh;
-
-}
-
-main div h2{
-    grid-area: h2;
-}
-
-main div p{
-    grid-area: p;
-    width: auto;
-    height: auto;
-    display: flex;
-    align-items: center;
-
-}
-main div img{
-    width: 100%;
-    height: auto;
-    grid-area: img;
-
 }
 
 p.end{
     padding-top: 100px;
-
 }
 
 p.end a{
-    text-decoration: none;
+    color: orange;
 }
 
 /*Recomendaciones pag y consultas pag*/
@@ -101,17 +155,14 @@ div.recomendaciones, div.consultas {
     flex-direction: column;
     align-items: center;
 }
+
 div.recomendaciones p, div.consultas p{
     margin: 5px;
     width: 80%;
     background-color: darkgoldenrod;    
     -webkit-border-radius: 10px;
     border-radius: 10px;
-
 }
-
-
-/*consultas pag*/
 
 section#consultas{
     display: flex;
@@ -119,7 +170,6 @@ section#consultas{
     align-items: center;
     padding: 2vh;
     margin-top: 5vh;
-    
 }
 
 section#consultas form{
@@ -129,7 +179,6 @@ section#consultas form{
     display: flex;
     flex-direction: column;
     align-items: center;
-   
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
@@ -146,17 +195,16 @@ section#consultas form > input{
     color: darkgoldenrod;
 }
 
-/*contactos*/
-    section#contactos{
-        color: antiquewhite;
+section#contactos{
+    color: antiquewhite;
     width: 100%;
-
 }
 
 section#contactos h2, p{
     padding-top: 1vw;
     margin-left: 2vw;
 }
+
 section#contactos div.contactos{
     width: 100%;
     display: flex;
@@ -192,7 +240,6 @@ section#contactos iframe{
     width: 100vw;
 }
 
-
 section.galeria{
     display: inline-flex;
     flex-wrap: wrap;
@@ -207,45 +254,19 @@ section.galeria div{
 
 
 /* -----DISEÑO RESPONSIVE----- */
-@media screen and (max-width: 768 ){ 
-    
-    body#intro{
-        width: 100%;
-
+@media screen and (max-width: 768px ){ 
+    h1{
+        font-size: 26px;
     }
 
-    body#intro header{
-        padding: 0;
-        margin: 0;
-        height: 170px;
-        align-items: center;
-    
+    h2{
+        font-size: 22px;
     }
 
-    body#intro header img{
-        width: 20%;
-
-    }
-
-    body#intro nav ul{
-        display: flex;
-        flex-direction: column;    
-    
-    }
-
-    body#intro nav ul li{
-
-        -webkit-border-radius: 10px;
-        border-radius: 10px;
-    }
-
-    body header{
-        height: 20vh;
+    p{
+        font-size: 16px;
     }
     
-
-
-
     main.contactos{
         display: inline-flex;
         flex-direction: column;
@@ -253,82 +274,33 @@ section.galeria div{
         align-items: center;
         min-height: 500px;
     }
-    footer{
-        background: linear-gradient(orange, black);
+
+    div.nosotros1, div.nosotros2{
         width: 100%;
-        padding: 0;
-        margin: 0;
+        display: block;
+        padding: 10vh;
 
     }
+
 } 
 
-
-body header .logo{
-    height: 8vh;
-    margin: 0 5vw;
-}
-
-body header nav {
-    background:linear-gradient(90deg, orange, black 70% );
-    height: 10vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    
-}
-body header nav ul{
-    display: flex;
-    justify-content: center;
-}
-body header nav ul li {
-    height: 40px;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin: 0 2vh;
-}
-
-body header nav ul li a{
-    color: wheat;
-    font-size: 18px;
-    text-decoration: none;
-    padding: 3px;
-}
-
-body header nav ul li:hover a{ 
-    background-color: #48484d;
-    color: orange;
-    filter:alpha(opacity=90);
-    -moz-opacity:.90;opacity:.90;
-    border-radius: 10px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-body header nav .checkbtn{
-    font-size: 30px;
-    color: white;
-    cursor:pointer;
-    display: none;
-}
-body header nav #check{
-    display: none;
-}
-
 @media screen and (max-width: 768px) {
+    body header{
+        height: 20vh;
+    }
+
     body header nav ul li a{
         font-size: auto;
     }
+
     body header nav .checkbtn{
         display: flex;
     }
+
     body header nav{
         padding: 0 30px;
     }
+
     body header nav ul{
         position: absolute;
         width: 100%;
@@ -342,17 +314,22 @@ body header nav #check{
         flex-direction: column;
         z-index: 10;
     }
+
     nav ul li{
         margin: 20px 0;
     }
+
     nav ul li a{
         font-size: 20px;
     }
+
     li a:hover, li a.active{
         //background: #000090;
         //color: red;
     }
+
     #check:checked ~ ul{
         left:0;
     }
 }
+    

@@ -39,7 +39,7 @@ footer{
 		}
 		& .red-social {
 			display: flex;
-			justify-content: space-around;
+			justify-content: center;
 			align-items: center;
 			& a{
 				display: inline-block;
@@ -69,7 +69,7 @@ footer{
 @media  screen and (max-width: 768px) {
 	footer{
 		& .info{
-			width: 70%;
+			width: 100%;
 			grid-template-columns: repeat(1, 1fr);
 			grid-gap: 30px;
 			padding: 35px 0px;
