@@ -331,9 +331,9 @@ h2.titulo-imagen{
 
 @media screen and (max-width: 768px) {
     body header{
-        height: 20vh;
+        height: 30vh;
+        background-color: black;
     }
-
     body header nav ul li a{
         font-size: auto;
     }
@@ -376,11 +376,15 @@ h2.titulo-imagen{
     #check:checked ~ ul{
         left:0;
     }
+
+    
+    body header img.fondo{
+        height: 40vh;
+    }   
 }
     
 @media screen and (max-width: 768px) {
     section.galeria{
-        padding-top: 40vh;
         padding-left: 3vw;
         padding-right: 3vw;
     }
