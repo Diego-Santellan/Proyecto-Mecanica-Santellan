@@ -90,18 +90,18 @@ main{
     color: white;
 }
 
-h1{
+main h1{
     color: orange;
     padding: 2vw;
 }
 
-h2{
+main div h2, main section h2{
     color: darkorange;
     padding-bottom: 1vh;
     padding-left: 7vh;
 }
 
-p{
+div p{
     padding: 15px;
 }
 /** pag. nosotros **/
@@ -157,7 +157,7 @@ p.end a{
 }
 
 /*Recomendaciones pag y consultas pag*/
-div.recomendaciones, div.consultas {
+div.recomendaciones{
     padding: 5px;
     width: 100%;
     display: flex;
@@ -165,7 +165,7 @@ div.recomendaciones, div.consultas {
     align-items: center;
 }
 
-div.recomendaciones p, div.consultas p{
+div.recomendaciones p{
     margin: 5px;
     width: 80%;
     background-color: darkgoldenrod;    

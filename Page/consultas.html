@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="../Style/Style.css">
     <link rel="stylesheet" href="../scss/page.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 </head>
 <body>
@@ -28,14 +30,47 @@
         </nav>
         <img class="fondo" src="../image/Mecanica-Automotriz.jpg" alt="motor">
     </header>
+    
     <main>
         <h1>Espacio de consultas</h1>
         <div class="consultas">
-
             <h2>Consultas frecuentes</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, obcaecati explicabo dolor natus odit dolores nihil fuga? Assumenda eius magnam ducimus dolorem nisi necessitatibus, quasi beatae, debitis velit recusandae excepturi.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit maxime officia dolor a dolores ipsum alias quos laudantium quasi culpa totam blanditiis iusto, deleniti fuga! In nisi ut minus recusandae.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis inventore magnam totam, dolor, laudantium at laboriosam, ex dolorem iusto nesciunt qui architecto! Quam voluptate ab obcaecati odit vitae velit iusto!</p>
+
+            <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="true">
+                <div class="carousel-indicators ">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active .bg-secondary.bg-gradient text-warning border border-warning">
+                        <div class="d-flex justify-content-center">
+                            <p class=" w-75 text-center mx-3 py-5">¿Cuáles bujías son mejores? <br> Las de platino duran más, y tienen mejor chispa y mejor combustión, resultando en un mejor rendimiento de combustible. Las bujías de tres y cuatro electrodos son más duraderas, hay una combustión más eficiente, mejor potencia y mayor rendimiento de combustible.
+                            </p>
+                        </div>    
+                    </div>
+                    <div class="carousel-item .bg-secondary.bg-gradient text-warning border border-warning ">
+                        <div class="d-flex justify-content-center"> 
+                            <p class="d-block w-75 text-center mx-3 py-5 ">¿Cuándo se debe cambiar el líquido para frenos?<br>Cada año en sistemas ABS o 20,000 Kms y cada 2 años o 40,000 Kms en sistemas convencionales. El líquido debe cambiarse debido a que es higroscópico, es decir que absorbe humedad y se generan depósitos que pueden dañar las distintas partes del sistema.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item .bg-secondary.bg-gradient text-warning border border-warning">
+                        <div class="d-flex justify-content-center ">
+                            <p class="d-block w-75 text-center mx-3 py-5">¿Qué es mejor: aceite orgánico o sintético?<br>El sintético, ya que por sus propiedades lubrica mejor, es más resistente a las altas temperaturas y protege mejor a bajas temperaturas, es más limpio ya que genera menos lodos y depósitos, se ahorra gasolina, produce menos fricción, el motor dura más y permite mejor potencia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
         
         <section id="consultas">
@@ -125,6 +160,9 @@
             <small>&copy; 2022 <b>Mecanica Santellán</b> - Todos los Derechos Reservados.</small>
         </div>
     </footer>
-     
+
+
+      <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
