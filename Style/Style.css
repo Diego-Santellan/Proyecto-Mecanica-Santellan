@@ -90,7 +90,7 @@ main{
     color: white;
 }
 
-main h1{
+main h1, main section div h3{
     color: orange;
     padding: 2vw;
 }
@@ -98,7 +98,7 @@ main h1{
 main div h2, main section h2{
     color: darkorange;
     padding-bottom: 1vh;
-    padding-left: 7vh;
+    text-align: center;
 }
 
 div p{
@@ -156,22 +156,17 @@ p.end a{
     color: orange;
 }
 
-/*Recomendaciones pag y consultas pag*/
-div.recomendaciones{
-    padding: 5px;
+/*Recomendaciones pag*/
+section#testimonios{
+    padding-bottom: 10vh;
+}
+section.estadisticas{
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 10vw;
+
 }
 
-div.recomendaciones p{
-    margin: 5px;
-    width: 80%;
-    background-color: darkgoldenrod;    
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-}
+/* CONSULTAS */
 
 section#consultas{
     display: flex;
@@ -180,6 +175,7 @@ section#consultas{
     padding: 2vh;
     margin-top: 5vh;
 }
+
 
 section#consultas form{
     background-color: orange;
@@ -202,6 +198,10 @@ section#consultas form > input{
     height: 5vh;
     background: linear-gradient(black 50%, grey);
     color: darkgoldenrod;
+}
+
+section#consultas form div input{
+    font-size: small;
 }
 
 section#contactos{
@@ -249,19 +249,6 @@ section#contactos iframe{
     width: 100%;
 }
 
-/*
-section.galeria{
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-section.galeria div{
-    width: 40%;
-    margin: 3vh;
-    display: inline-flex;
-}
-*/
 
 div.cuerpo-galeria{
     width: 100%;
@@ -299,36 +286,6 @@ h2.titulo-imagen{
 
 
 /* -----DISEÑO RESPONSIVE----- */
-@media screen and (max-width: 768px ){ 
-    h1{
-        font-size: 26px;
-    }
-
-    h2{
-        font-size: 22px;
-    }
-
-    p{
-        font-size: 16px;
-    }
-
-    main.contactos{
-        display: inline-flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        min-height: 500px;
-    }
-
-    div.nosotros1, div.nosotros2{
-        width: 100%;
-        display: block;
-        padding: 10vh;
-
-    }
-
-} 
-
 @media screen and (max-width: 768px) {
     body header{
         height: 30vh;
@@ -368,11 +325,6 @@ h2.titulo-imagen{
         font-size: 20px;
     }
 
-    li a:hover, li a.active{
-        //background: #000090;
-        //color: red;
-    }
-
     #check:checked ~ ul{
         left:0;
     }
@@ -381,6 +333,41 @@ h2.titulo-imagen{
     body header img.fondo{
         height: 40vh;
     }   
+}
+
+@media screen and (max-width: 768px ){ 
+    h1{
+        font-size: 26px;
+    }
+
+    h2{
+        font-size: 22px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    main.contactos{
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 500px;
+    }
+
+    div.nosotros1, div.nosotros2{
+        width: 100%;
+        display: block;
+        padding: 10vh;
+
+    }
+    
+} 
+@media screen and (max-width:786px) {
+    div#testimonio-no-resposive{
+        display: none;
+    }
 }
     
 @media screen and (max-width: 768px) {
