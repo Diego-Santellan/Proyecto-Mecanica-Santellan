@@ -173,7 +173,13 @@ section#consultas{
     flex-direction: column;
     align-items: center;
     padding: 2vh;
-    margin-top: 5vh;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    
+}
+
+section#contactos p{
+    text-align: center;
 }
 
 
@@ -211,7 +217,6 @@ section#contactos{
 
 section#contactos h2, p{
     padding-top: 1vw;
-    margin-left: 2vw;
 }
 
 section#contactos div.contactos{
